@@ -1,0 +1,51 @@
+<!DOCTYPE html><!--It tells the browser to expect HTML and what version to use, this one means use the newest version of HTML-->
+<html lang="en">
+    <head>
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+        <h2>CatPhotoApp</h2><!--h:heading-->
+        <main>
+            <h3>Cat Photos</h3>
+            <!--TO DO: Add link to cat photos-->
+            <p>Click here to view more <a href="#" target="_blank">Cat photos</a>.</p><!--paragrah-->
+            <!--a: to go to other web-->
+            <a href="#"><img src="https://fcc.im/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a> <!--attribute: src alt-->
+            <h3>Cat Lists</h3>
+            <div class="lists">
+                <p>Things cats <em>love</em>:</p>
+                <ul><!--unordered list-->
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <img src="lasagna.jpg" alt="Lasagna">
+                <p>Things cats <strong>hate</strong></p>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+            </div>
+            <img src="cats.jpg" alt="Cats">
+            <form action="/submit-cat-photo"><!--when yo click the submit button, it will submit all the data to that URL-->
+                <!--name:By creating a radio group selecting any single radio button will automatically the select to the other buttons with the same group(name), ensuring only one answer is provided by the user-->
+                <!--id: Is used to identify specific elements in other sections of HTML, CSS and JavaScript-->
+                <!--label: This allows assisting technologies to create a linked relationship between the label and the child input element -->
+                <label for="indoor"><input id ="indoor" type="radio" name="indoor-outdoor" checked > Indoor</label><br>
+                <label for="outdoor" ><input id ="outdoor" type="radio"name="indoor-outdoor"> Outdoor</label><br>
+
+                <label for="loving"><input id ="loving" type="checkbox"name="personality"checked>Loving</label><br>
+                <label for="lazy"><input id ="lazy" type="checkbox"name="personality">Personality</label><br>
+                <label for="energetic"><input id ="energetic" type="checkbox"name="personality">Energetic</label><br>
+
+                <input type="text" placeholder="cat photos URL" required><br>
+                <button type="submit">Submit</button>
+
+            </form>
+        </main>
+        <footer>
+            <p><small>No Copyright - <a href="https://freecodecamp.org">freeCodeCamp.org</a> </small> </p>
+        </footer>
+    </body>
+</html>
